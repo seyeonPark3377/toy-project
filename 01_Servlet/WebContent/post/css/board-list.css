@@ -1,0 +1,83 @@
+
+/* --------------------- list content ------------------- */
+
+.content #search {
+    display: flex;
+    flex-direction: column;
+}
+.query-frm {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    background-color: #d6afc588;
+    margin: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.query-frm * {
+    margin: 2%;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.query-frm button {
+    width: 100px;
+    height: 50px;
+    background-color:#a9def9;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.order-frm {
+    display: flex;
+    justify-content: end;
+    margin: 5%;
+    margin-top: 2%;
+}
+.order-frm * {
+    margin:5px;
+}
+.content table {
+    margin: 5%;
+    text-align: center;
+    background-color: #d6afc577;
+}
+tr {
+    padding: 50px;
+}
+.content-reg {
+    display: flex;
+    justify-content: end;
+    margin: 5%;
+}
+.content-reg button {
+    width: 80px;
+    height: 30px;
+    background-color:#a9def9;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.page-frm {
+    display: flex;
+    justify-content: space-between;
+    background-color:#d6afc588;
+    color :#000000;
+    margin: 5%;
+    margin-top: 0;
+}
+
+.prev-next, .current {
+    margin: 2%;
+}
+
+.prev-next a {
+	color: #000000;
+    text-decoration: none;
+}
+.current a {
+	color: #000000;
+    text-decoration: underline;
+}
+
+
+
+/* --------------------- list content ------------------- */

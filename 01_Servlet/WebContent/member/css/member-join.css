@@ -1,0 +1,52 @@
+/* --------------------- register user ------------------- */
+.reg-frm {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.reg-line {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.reg-line label {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+.reg-line input {
+    border-radius: 4px;
+    font-size: 15px;
+    width: 330px;
+    height: 30px;
+    background-color: #edf6f9;
+}
+.cfm-id {
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+}
+.cfm-id button {
+    background-color:#a9def9;
+    border: none;
+    margin: 5px;
+    width: 100px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+.reg-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.reg-btn button {
+    width: 120px;
+    height: 30px;
+    background-color:#a9def9;
+    border: none;
+    margin:10px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+/* --------------------- register user ------------------- */

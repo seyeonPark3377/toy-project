@@ -1,0 +1,137 @@
+/* --------------------- read content ------------------- */
+
+.reg-btn {
+	display:flex;
+	justify-content:center;
+}
+button {
+	box-shadow: 1px 4px 0 rgb(0,0,0,0.5);
+}
+button:active {
+	top:2px;
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+  	position: relative;
+}
+.content-frm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#d6afc588;
+    color :#000000;
+    margin: 5%;
+}
+#content-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5%;
+}
+#content-info {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin : 5%
+}
+#content-main {
+    margin: 5%;
+    text-align: start;
+}
+.comment-frm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#d6afc588;
+    color :#000000;
+    margin: 5%;
+    margin-top: 0;
+}
+#comment-reg form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+}
+#comment-reg textarea {
+    width: 500px;
+    height : 80px;
+    margin-right: 5%;
+    font-size: 15px;
+}
+#comment-reg button {
+    background-color:#a9def9;
+    border: none;
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 1em;
+}
+#comment-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align:center;
+    margin:5%;
+}
+#comment-view .comment {
+    display: flex;
+    justify-content: space-between;
+}
+.comment .comment-author {
+    margin: 5%;
+}
+.comment .comment-main {
+    margin: 5%;
+}
+.comment .comment_fn {
+    margin: 5%;
+}
+.comment_fn button {
+    width: 60px;
+    height: 30px;
+    background-color:#a9def9;
+    border: none;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+.comment-reg-hidden {
+	display:none;
+}
+.comment-reg-hidden form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+}
+.comment-reg-hidden textarea {
+    width: 500px;
+    height : 80px;
+    margin-right: 5%;
+    font-size: 15px;
+}
+.comment-reg-hidden button {
+    background-color:#a9def9;
+    border: none;
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.page-frm {
+    display: flex;
+    justify-content: space-between;
+    background-color:#d6afc588;
+    color :#000000;
+    margin: 5%;
+    margin-top: 0;
+}
+.prev-next {
+    margin: 2%;
+}
+.prev-next a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* --------------------- read content ------------------- */

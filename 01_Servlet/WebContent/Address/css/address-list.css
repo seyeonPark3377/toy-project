@@ -1,0 +1,241 @@
+:root {
+    --darkGreen: #283618;   /* 어두운 녹색 */
+    --forestGreen: #606c38; /* 숲색 */
+    --lightYellow: #fefae0; /* 밝은 노란색 */
+    --goldenYellow: #dda15e; /* 황금색 */
+    --brown: #bc6c25;       /* 갈색 */
+    --lightGreen: #ccd5ae;  /* 밝은 녹색 */
+    --paleGreen: #e9edc9;   /* 연한 녹색 */
+    --beige: #faedcd;       /* 베이지 */
+    --sand: #d4a373;        /* 모래색 */
+
+    --fontXL: 36px;  /* 주로 제목(h1)으로 사용 */
+    --fontL: 30px;   /* 부제목(h2)로 사용 */
+    --fontM: 24px;   /* 소제목(h3) 또는 중요한 본문 텍스트로 사용 */
+    --fontS: 18px;   /* 본문 텍스트로 사용 */
+    --fontXS: 14px;  /* 보조 텍스트 또는 작은 본문 텍스트로 사용 */
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font: optional;
+}
+
+body{
+    background-color: var(--lightYellow);
+    height: 100%;
+    
+}
+
+
+header {
+    background-color: var(--darkGreen);
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: var(--darkGreen);
+    width: 80%;
+    height: 80px;
+    max-width: 1350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > ul {
+    background-color: var(--darkGreen);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
+}
+
+nav > ul > li {
+    background-color:var(--darkGreen);
+    list-style: none;
+}
+
+nav > ul > li > a {
+    background-color:var(--darkGreen);
+    text-decoration: none;
+    font-size: var(--fontXL);
+    color: var(--lightYellow);
+    font-weight: bold;
+}
+
+nav > ul > li > a:hover {
+    color: var(--goldenYellow);
+}
+
+#container{
+    background-color: var(--lightYellow);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 95%;
+}
+
+#container > .side {
+    background-color: var(--lightYellow);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#container > .side > .leftSide {
+    background-color: var(--lightGreen);
+    width: 100%;
+    padding: 20px 40px;
+    border-radius: 15px;
+    margin-right: 20px;
+    box-shadow: 3px 3px 10px 1px var(--forestGreen);
+}
+
+.group {
+   display: flex;
+   flex-flow: row nowrap;
+   padding: 10px 0px;
+   font-size: var(--fontS);
+   font-weight: bold;
+}
+
+.group > .btn {
+    background-color: #606c38;
+    color: white;
+    padding: 10px;
+    font-size: var(--fontS);
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--beige);
+    color: var(--darkGreen);
+}
+
+
+
+.group > input{
+    margin: 5px;
+ }
+
+
+#center {
+    background-color:var(--lightYellow);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#searchInput {
+    background-color:var(--lightYellow);
+    width: 85%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#searchInput > input{
+    background-color: var(--paleGreen);
+    border-radius: 5px;
+    border: none;
+    margin: 30px 10px;
+    width: 550px;
+    height: 30px;
+}
+
+#searchInput > .btn{    
+    width: 100px;
+}
+
+#contents {
+    background-color:var(--lightYellow);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 30px;
+    
+}
+
+
+.content {
+    background-color:var(--paleGreen);
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items:flex-start;
+    box-shadow: 3px 3px 10px 1px var(--forestGreen);
+
+}
+
+.gName {
+    background-color: var(--lightGreen);
+    height: 200px;
+    line-height: 200px;
+    width: 80px;    
+    border-radius: 15px;
+    font-size: var(--fontXL);
+    font-weight: bold;
+    text-align: center;
+}
+
+.detail{
+    background-color: var(--paleGreen);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 200px;
+    width: 220px;
+    border-radius: 15px;
+    font-size: var(--fontS);
+    font-weight: bold;
+    text-align: start;
+}
+
+.detail > p {
+    margin-left: 10px;
+}
+
+.content > input {
+    background-image: url(/jhProject/img/editBtn.png);
+    background-size: cover;
+    background-color: var(--paleGreen);
+    border: none;    
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+.editbtn {
+    /* background-size: cover;
+    background-position: center; */
+    width: 10px; /* 이미지 너비에 맞게 조정하세요 */
+    height: 10px; /* 이미지 높이에 맞게 조정하세요 */
+    /* border: none;
+    cursor: pointer;
+    display: inline-block; */
+}
+
+
+footer {
+    background-color: rgb(40, 54, 24, 0.8); /* 다크 그린 불투명*/
+    color: #fefae0; /* 밝은 크림색 */
+    text-align: center;
+    font-style: italic;
+    font-size: var(--fontS);
+    padding: 30px 0;
+    
+}
