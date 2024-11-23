@@ -1,0 +1,187 @@
+
+:root {
+    --fontXL: 36px;  /* 주로 제목(h1)으로 사용 */
+    --fontL: 30px;   /* 부제목(h2)로 사용 */
+    --fontM: 24px;   /* 소제목(h3) 또는 중요한 본문 텍스트로 사용 */
+    --fontS: 18px;   /* 본문 텍스트로 사용 */
+    --fontXS: 14px;  /* 보조 텍스트 또는 작은 본문 텍스트로 사용 */
+}
+
+* {
+    font-family: 'Segoe UI', "Tahoma", "Geneva", "Verdana", "sans-serif";
+    margin:0;
+    padding:0;
+}
+body {
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 100px;
+}
+/* --------------------- header ------------------- */
+header {
+	
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f2e9e4;
+    margin-top: 2%;
+
+}
+.logo * {
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #f2e9e4;
+}
+.lg {
+	margin:5%;
+}
+
+nav {
+    margin: 5%;
+    
+}
+nav ul {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 3%;
+}
+nav ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #f2e9e4;
+}
+nav ul li ul {
+	display:flex;
+	flex-direction: column;
+}
+nav ul li a:hover {
+    color: #ff7b00;
+}
+
+nav ul li .dropdown-content {
+	
+    display: none;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+    width:100%;
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a {
+    font-size: 20px;
+    color: #fff;
+}
+
+nav ul li .dropdown-content li a:hover {
+    color: #ff7b00;
+}
+/* --------------------- header ------------------- */
+
+.container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+/* --------------------- side-bar ------------------- */
+.side-bar {
+    width: 300px;
+    height: 55%;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    
+    display: flex;
+    flex-direction: column;
+    color: #f2e9e4;
+    
+    margin-left:0;
+    margin-right:5%;
+    
+}
+.side-bar h2 {
+    margin: 30px;
+}
+.side-bar ul {
+    list-style: none;
+}
+.side-bar ul li {
+    margin:30px;
+}
+.side-bar ul li a {
+    margin: 20px;
+    text-decoration: none;
+    color :#f2e9e4;
+}
+
+.side-bar ul li a:hover {
+    color: #ff7b00;
+}
+
+
+/* --------------------- side-bar ------------------- */
+.content {
+    margin-right: 5%;
+    width: 60%;
+    hight: 55%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color :#f2e9e4;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-right: 20px;
+    align-self: flex-start;
+}
+.content h2 {
+    margin: 30px;
+}
+
+.reg-btn button {
+    width: 120px;
+    height: 30px;
+    background-color:#a9def9;
+    border: none;
+    margin:10px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: flex; 
+    /* position: static; 스테틱을 쓰면 푸터가 안내려오고 픽시드를 쓰면 푸터가 본문을 가려버려요*/
+    bottom:0;
+    height: 100px;
+    text-align: center;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f2e9e4;
+    font-size: large;
+    font-weight: bold;
+}

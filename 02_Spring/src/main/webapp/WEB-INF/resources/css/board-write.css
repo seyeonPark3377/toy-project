@@ -1,0 +1,34 @@
+
+/* --------------------- write content ------------------- */
+
+
+.content-title-input {
+	display: flex;
+	justify-content: center;
+}
+.content-title-input input {
+	background-color :#eeeeff;
+	margin: 5%;
+	width:80%;
+	font-size: 30px;
+	text-align:center;
+}
+.content-main-input {
+    display: flex;
+    justify-content: center;
+}
+.content-main-input textarea{
+	background-color :#eeeeff;
+	width: 80%;
+	height: 500px;
+	font-size:15px;
+	
+}
+.ck-editor__editable {
+    height: 500px;
+}
+.ck-content {
+    color : #000000;
+    font-size: 15px;
+}
+/* --------------------- write content ------------------- */
